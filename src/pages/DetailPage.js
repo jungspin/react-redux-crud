@@ -14,9 +14,8 @@ const DetailPage = (props) => {
   const delOne = (e) => {
     e.preventDefault();
     dispatcher(doDelete(post[0].id));
-    console.log(3, post[0].id);
+    //console.log(3, post[0].id);
     props.history.push("/");
-    // 일단 미완성...안되네 존나
   };
 
   return (

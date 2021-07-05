@@ -81,7 +81,14 @@ const reducer = (state = initstate, action) => {
   switch (action.type) {
     case DO_POST:
       return {
-        posts: [...state.posts, action.payload],
+        posts: [
+          ...state.posts,
+          {
+            id: Number(action.payload.id),
+            title: action.payload.title,
+            content: action.payload.content,
+          },
+        ],
       };
     case DO_UPDATE:
       return {

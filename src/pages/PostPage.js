@@ -9,7 +9,7 @@ const PostPage = (props) => {
   //console.log(1, posts);
 
   const [postDto, setPostDto] = useState({
-    id: "",
+    id: Number(""),
     title: "",
     content: "",
   });

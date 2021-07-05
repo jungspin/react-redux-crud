@@ -5,6 +5,7 @@ import { Card, Container } from "react-bootstrap";
 
 const HomePage = () => {
   const { posts } = useSelector((store) => store);
+  console.log(posts);
   return (
     <div>
       {posts.map((post) => (
